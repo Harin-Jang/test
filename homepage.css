@@ -1,0 +1,58 @@
+#tabmenu {
+    float: left;
+    width:max-content;
+    height: 100%;
+}
+#tabmenu input[type="radio"]{
+    display: none; /* 라디오 버튼 감춤 */
+}
+#tabmenu label { /* 탭 제목 스타일 */
+    display: inline-block; /* 가로로 탭 배치 */
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+#tabmenu label:hover {
+    color: #222;
+    cursor: pointer;
+}
+#tabmenu input:checked + label {
+    background-color: #eee;
+}
+
+.tabContent {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+#introduce ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+#introduce ul li {
+    font-size: 16px;
+    line-height: 2.5;
+}
+.me {
+    border-radius: 10%;
+    box-shadow: 5px 5px 25px #000;
+}
+
+#hobby ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+#hobby ul li {
+    line-height: 2.5;
+}
+.vertical-lr {
+    writing-mode: vertical-lr;
+  }
+
+#tab1:checked ~ #introduce,
+#tab2:checked ~ #hobby,
+#tab3:checked ~ #music {
+    display: block;
+}

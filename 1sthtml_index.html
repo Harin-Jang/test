@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- 시작할 때 아무것도 없는 페이지에서 ! + enter 하면 기본 세팅이 나타난다 -->
+<html lang="en"> <!--문서가 html임을 알려줌 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 확대, 축소 비율을 100%로 고정한다 -->
+    <title>웹페이지</title> <!-- title 태그 안에 글을 쓰면 웹페이지 이름이 바뀜(위에 탭 뜨는 부분) -->
+</head>
+<body> <!-- body 안에 입력하면 글자가 웹페이지에 나타남 -->
+    <h1> h1 제목글 </h1>
+    <h2> h2 제목글 </h2>
+    <h3> h3 제목글 </h3>
+    <h4> h4 제목글 </h4>
+
+    <p> 1문단 </p> <!-- p 태그는 문단을 구분하는 태그 -->
+    <p> 2문단 </p>
+
+    <i> 기울임 </i> <!-- i 태그는 기울임 태그 -->
+    <hr> <!-- 구분선 태그 -->
+    <br> <!-- enter 태그 -->
+    <b> 진한 글꼴 </b> <!-- b 태그는 글꼴 진하게 태그 -->
+    <hr> 
+
+    <a href="https://www.naver.com/">네이버</a> <!-- a href 태그는 인용 태그 -->
+    <div> <!-- 이하 글들이 div라는 카테고리 안에 묶임, 블록 요소 div로 묶인 공간 모두 차지함 -->
+    <h1> h1 제목글 </h1>
+    <h2> h2 제목글 </h2>
+    <h3> h3 제목글 </h3>
+    <h4> h4 제목글 </h4>
+    </div>
+    <span> <!-- 인라인 요소, 태그되는 공간만 차지함 -->
+    <h1> h1 제목글 </h1>
+    <h2> h2 제목글 </h2>
+    <h3> h3 제목글 </h3>
+    <h4> h4 제목글 </h4>
+    </span>
+    <img src="" alt ="">
+    <audio src = "" controls >오디오입니다</audio> <!-- 오디오 첨부 가능, controls 쓰면 오디오바가 나와서 재생 가능함-->
+    <video src = "" controls></video> <!-- video 태그 -->
+    <table border width = "500"> <!-- border = 테두리를 만들어줌 -->
+        <caption>제목</caption>
+        <colgroup>
+            <col width = "100">
+            <col width = "100">
+        </colgroup>
+        <tr> <!-- 자식 태그 위 부모 태그 , 행을 만들어주는 태그-->
+            <th colspan="3">1행 1열</th> <!-- 제목처럼 굵게 지정해줌, colspan 하면 병합됨 -->
+            <th rowspan = "3">1행 2열</th> <!-- 열 만드는 태그, rowspan은 열이 병합됨 -->
+            <td>1행 3열</td>
+            <td>1행 4열</td>
+        </tr>
+        <tr> <!-- 자식 태그 위 부모 태그 -->
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+            <td>2행 4열</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>list</li> <!-- list를 만들어줌, list 앞에 점으로 구분됨, 순서가 상관없이 작성하는 리스트 태그-->
+        <li>list2</li>
+        <li>list3</li>
+    </ul>
+    <ol>
+        <li>list</li> <!-- list를 만들어줌, list 앞에 숫자로 구분됨, 순서가 필요할 때 사용하는 리스트 태그-->
+        <li>list2</li>
+        <li>list3</li>
+    </ol>
+
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+
+    <foam action="hello">
+        <fieldset>
+            <legend>폼 제목</legend>
+            <input type="text" required> <!-- 입력창에 경고창이 뜨게 됨 -->
+            <input type="text" placeholder="입력창입니다"> <!-- 입력창에 은은하게 문구를 나타냄 -->
+            <input type="radio" name ="radio">
+            <input type="range"> <!-- 조절바가 생김 -->
+            <label for = ""> input 창<input type = "password"></label>
+            <input type ="submit"> <!-- 제출창이 만들어짐 -->
+
+
+            <button type = "submit"> 제출버튼 </button> <!-- 기본 설정이 submit임 -->
+            <button type = "reset"> 리셋버튼 </button> <!-- 리셋버튼 만들 수 있음 -->
+            <textarea name = "" id = "" cols = "30" rows = "10"></textarea>
+            <select name = "" id = "">
+                <option value = "">옵션1</option>
+                <option value = "">옵션2</option>
+                <option value = "">옵션3</option>
+                <option value = "">옵션4</option>
+            </select>
+
+            <input type = "text" list = "data">
+            <datalist id = "data">
+                <option value = "html" html입니다></option>
+                <option value = "css" css입니다></option>
+                <option value = "js" js입니다></option>
+                <option value = "dj" dj입니다></option>
+            </datalist>
+
+        </fieldset> <!-- 사용자 공간을 입력받을 때 묶는 태그 -->
+
+    </foam>
+
+
+</body>
+</html>

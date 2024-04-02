@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하린 페이지</title>
+<style>
+    #menu {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #menu li {
+        display: inline;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #content {
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body style="background-color:#fcfaed">
+    <p style="text-align: center; font-size: 36px; font-weight: bold;">My Homepage</p>
+
+<ul id="menu" style="text-align: center;">
+    <li onclick="changeContent('소개')">소개</li>
+    <li onclick="changeContent('취미')">취미</li>
+    <li onclick="changeContent('플레이리스트')">플레이리스트</li><hr>
+</ul>
+
+<div id="content">
+    <!-- 기본 내용 -->
+    <h2 style = "text-align: center;">하린이의 홈페이지에 온 것을 환영합니다</h2>
+</div>
+
+<script>
+    // 메뉴 클릭시 내용 변경하는 함수
+    function changeContent(page) {
+        var contentDiv = document.getElementById('content');
+        var newContent = '';
+
+        // 페이지에 따라 다른 내용으로 변경
+        if (page === '소개') {
+            newContent = '<h4>안녕하세요 하린입니다<br>컴퓨터공학과 3학년입니다<br>MBTI는 ISTJ예요';
+        } else if (page === '취미') {
+            newContent = '<h2>About Us</h2><p>Learn more about our company.</p>';
+        } else if (page === '플레이리스트') {
+            newContent = '<h2>Contact Us</h2><p>Contact us for any queries or feedback.</p>';
+        }
+
+        // 내용 변경
+        contentDiv.innerHTML = newContent;
+    }
+</script>
+
+</body>
+</html>

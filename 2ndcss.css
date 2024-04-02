@@ -1,0 +1,107 @@
+/* 웹페이지를 꾸며주는 코드*/
+p{
+    color: blue;
+    font-size: 20px; /*폰트 크기 조절, 단위는 px, em:현재 폰트에서 2배 크기, vw:현재페이지에서 몇 퍼센트의 비율을 부여, vh:페이지높이의n퍼센트부여*/
+    font-style:italic;
+    font-weight:bold; /*폰트의 굵기, 기본값 400*/
+    /*font-variant: small-caps;*/ /*대문자를 소문자로 변경 가능*/
+    color: rgb(35, 140, 145); /*rgb값도 가능*/ /*transparent : 투명하게*/
+    text-align: left;
+    line-height:20px;
+    letter-spacing: 20px; /*문자의 자간이 늘어남(가로로)*/
+    word-spacing:30px; /*문자 사이의 간격 조절 가능*/
+    text-indent: 20px; /*들여쓰기*/
+    text-transform: lowercase; /*대문자를 소문자로 변경 가능*/
+    text-decoration: underline; /*밑줄 긋기*/
+    text-decoration: overline; /*윗줄 굿기*/
+    text-decoration: line-through blue; /*취소선의 색 지정 가능*/
+    text-shadow: 1px 1px 1px ; /*text에 그림자 생성*/
+
+    /*텍스트에 테두리 집어넣기*/
+    border: 1px solid black; /*solid이외에도 dashed(선), dotted(점), double(이중선), inset(진하게), outset(아래쪽을 진하게)도 가능*/
+
+    
+    
+}
+p:hover { /*마우스 가까이 갈 때 이벤트*/
+    cursor:pointer; /*커서가 가까이 가면 포인터 바뀜*/
+    color: blue;
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none; /*링크의 선이 사라짐*/
+} 
+
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 4px;
+
+    text-align: center;
+    border:1px solid black;
+    border-radius: 100%;
+    width: 300px;
+    height: 100px;
+    padding left: 20px;
+    margin-top: 30px;
+}
+.text2{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -20px;
+    top: 100px;
+
+}
+.img_box {
+    text-align: center;
+    border:1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 160px;
+    background-image: url(); /* 여기서 이미지 등록하면 됨*/
+    background-size: 20px; /*이미지가 20px인 채로 백그라운드를 전부 채움*/
+    background-repeat: no-repeat; /*위에 백그라운드를 전부 채운 이미지를 한장만 나오게*/
+    background-position: 10px 20px;
+}
+body{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+.flex_container{
+    display: flex;
+    border: 1px solid blue;
+    width: 120px;
+    height: 50px;
+}
+
+.item {
+    border: 1px solid blue;
+    width: 120px;
+    height: 50px;
+    order: 1;
+}
+.item1{
+    flex-grow: 1;
+    border: 1px solid blue;
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    order: 2;
+}
+.item2{
+    flex-grow: 2;
+    border: 1px solid blue;
+    width: 150px;
+    height: 50px;
+    order: 3;
+}
+.item3{
+    flex-grow: 2;
+    border: 1px solid blue;
+    width:50px;
+    height: 50px;
+    order: 4; /*페이지 배치 순서를 정함*/
+}

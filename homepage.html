@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="homepage.css">
+    <title>하린 페이지</title>
+</head>
+<body style="background-color:#fcfaed">
+    <p style="text-align: center; font-size: 36px; font-weight: bold;">My Homepage</p>
+
+<div id = "contents">
+    <div id = "tabmenu">
+        <input type = "radio" id = "tab1" name = "tabs" checked>
+        <label for="tab1">소개<hr></label>
+        <input type = "radio" id = "tab2" name = "tabs">
+        <label for = "tab2">취미<hr></label>
+        <input type = "radio" id = "tab3" name = "tabs">
+        <label for = "tab3">플레이리스트<hr></label>
+
+        <div id="introduce" class="tabContent">
+            <h2 style="text-align: center;">저를 소개할게요</h2>
+            <div style="display: flex; align-items: center; margin-left: 20px;">
+                <img src="homepage_drawable/IMG_E0973.JPG" width="450" height="500" class="me" style="float: left; margin-right: 20px;">
+                <ul>
+                    <li><h3>이름 : 장하린</h3></li>
+                    <li><h3>생일 : 2002 07 13</h3></li>
+                    <li><h3>컴퓨터공학과 3학년</h3></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div id = "hobby" class = "tabContent">
+            <h2 style="text-align: center;">취미를 소개할게요</h2>
+            <ul>
+                <li><h3>독서</h3></li>
+                <div style="display: flex; flex-direction: column; align-items:flex-center;">
+                    <div style="text-align: left;"> <h5>최근 읽고있는 책</h5></div>
+                    <div style="display: flex;">
+                        <img src="homepage_drawable/book.jpg" width="200" height="300">
+                        <img src="homepage_drawable/book2.jpg" width="200" height="300">
+                    </div>
+                </div>
+                <li><h3>다이어리 쓰기</h3></li>
+                <img src="homepage_drawable/diary.jpg" width="200" height="300">
+                <li><h3>영화 보기</h3></li>
+                <div style="display: flex; flex-direction: column; align-items: flex-center;">
+                    <div style="text-align: left;"><h5> 좋아하는 영화</h5></div>
+                    <div style="display: flex;">
+                        <img src="homepage_drawable/lily_choychou.jpg" width="200" height="300">
+                        <img src="homepage_drawable/aftersun.jpg" width="200" height="300">
+                        <img src="homepage_drawable/handmaiden.jpg" width="200" height="300">
+                        <img src="homepage_drawable/coraline.jpg" width="200" height="300">
+                        <img src="homepage_drawable/shape_of_water.jpg" width="200" height="300">
+                    </div>
+                </div>
+                <li><h3>애니메이션 보기</h3></li>
+                <div style="display: flex; flex-direction: column; align-items: flex-center;">
+                    <!--<div style="text-align: left;"><h5> 좋아하는 애니메이션</h5></div>
+                    <div style="display: flex;">
+                        <img src="homepage_drawable/madoka.jpg" width="200" height="300">
+                        <img src="homepage_drawable/revue_starlight.jpg" width="200" height="300">
+                        <img src="homepage_drawable/penguindrum.jpg" width="200" height="300">
+                        <img src="homepage_drawable/yurikuma_arasi.jpg" width="200" height="300">
+                        <img src="homepage_drawable/bakemonogatari.jpg" width="200" height="300">
+                    </div>-->
+                </div>
+                <li><h3>필사하기</h3></li>
+            </ul>
+        </div>
+
+        
+        <div id = "music" class = "tabContent">
+            <h2 style="text-align: center;">나의 플레이리스트* ੈ✩‧₊˚</h2>
+            <tr>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <th >아일릿 - magnetic</th>
+                    <td><audio src="homepage_drawable/ILLIT (아일릿) - Magnetic [Audio].mp4" controls></audio></td>
+                </div>
+            </tr>
+            <tr>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <th >트와이스 - SAY SOMETHING</th>
+                    <td><audio src="homepage_drawable/TWICE (트와이스) - SAY SOMETHING [MP3 Audio] [Eyes wide open].mp4" controls></audio></td>
+                </div>
+            </tr>
+            <tr>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <th >빌리 - nevertheless</th>
+                    <td><audio src="homepage_drawable/Billlie nevertheless Lyrics (Color Coded Lyrics).mp4" controls></audio></td>
+                </div>
+            </tr>
+            <tr>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <th >Dhruv - double take</th>
+                    <td><audio src="homepage_drawable/Dhruv - double take (Official Audio).mp4" controls></audio></td>
+                </div>
+            </tr>
+            <tr>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <th >きのこ帝国 - You outside my window</th>
+                    <td><audio src="homepage_drawable/You outside my window.mp4" controls></audio></td>
+                </div>
+            </tr>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
